@@ -1,4 +1,4 @@
-# Mattermost Documentation
+# Essential Mattermost Docs
 
 This repository generates the documentation available at https://docs.mattermost.com/. All documentation is available under the terms of a [Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
@@ -6,14 +6,17 @@ If you have any questions, create an account on the [Mattermost Community server
 
 # Table of Contents
 
- * [Contributing](#contribute-to-mattermost-product-documentation)
-     * [Get started](#get-started)
-     * [Edit content directly on GitHub](#edit-content-directly-on-github)
-     * [Create documentation PRs](#create-documentation-pull-requests)
-     * [Use GitHub PR Labels](#use-github-pr-labels)
-     * [Comment on Pull Requests](#comment-on-pull-requests)
-     * [Review Pull Requests](#review-pull-requests)
- * [Build locally](#build-locally)
+- [Essential Mattermost Docs](#essential-mattermost-docs)
+- [Table of Contents](#table-of-contents)
+  - [Contribute to Mattermost product documentation](#contribute-to-mattermost-product-documentation)
+    - [Get started](#get-started)
+    - [Edit content directly on GitHub](#edit-content-directly-on-github)
+    - [Create Documentation pull requests](#create-documentation-pull-requests)
+    - [Comment on pull requests](#comment-on-pull-requests)
+    - [Review pull requests](#review-pull-requests)
+  - [Build locally](#build-locally)
+    - [Build prerequisites](#build-prerequisites)
+    - [Build instructions](#build-instructions)
 
 ## Contribute to Mattermost product documentation
 
