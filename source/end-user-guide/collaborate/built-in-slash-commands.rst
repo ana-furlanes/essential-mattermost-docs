@@ -2,71 +2,53 @@ Use built-in slash commands
 ============================
 
 .. include:: ../../_static/badges/allplans-cloud-selfhosted.rst
-  :start-after: :nosearch:
+  :start-after: :nosearch:
 
-You can interact with Mattermost users, channels, conversations, and more using `built-in slash commands <#slash-commands>`_, or interact with the data model programmatically using `API endpoints <https://api.mattermost.com/>`__.
-
-Slash commands
---------------
-
-The following built-in slash comamnds are available in your Mattermost :doc:`workspace </end-user-guide/end-user-guide-index>`. 
+You can interact with Mattermost users, channels, and conversations using slash commands directly in the message box.
 
 .. tip::
 
-    Looking for more slash commands? See the `custom slash commands <https://developers.mattermost.com/integrate/slash-commands/custom/>`__ developer documentation for details on creating custom commands.
+    Looking for more slash commands? See the `custom slash commands <https://developers.mattermost.com/integrate/slash-commands/custom/>`__ developer documentation for details on creating custom commands.
 
-Invite people
-~~~~~~~~~~~~~
+Commands for channels and invites
+---------------------------------
 
-- Invite one person using ``/invite user1`` or ``/invite @user1``.
-- Invite a custom user group using ``/invite @usergroup``.
-- Invite multiple people using ``/invite @user1 @user2``.
-- Invite one person to a specific channel using ``/invite @user1 ~channel1``, or ``/invite @user1 channel1``.
-- Invite multiple people to multiple channels using ``/invite @user1 @user2 ~channel1 ~channel2``.
-- Invite people by email using ``/invite_people {name@domain.com, ...}``.
+These commands help you manage channels and invite people to your workspace.
 
-Join, leave, or mute channels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* **Invite people:**
+    - To invite one person: ``/invite @username`` (e.g., ``/invite @alice``)
+    - To invite a user group: ``/invite @usergroup``
+    - To invite multiple people to a channel: ``/invite @user1 @user2 ~channel-name`` (e.g., ``/invite @bob @sally ~project-alpha``)
+    
+* **Manage channels:**
+    - To join a channel: ``/join {channel-name}`` (e.g., ``/join marketing-team``)
+    - To leave a channel: ``/leave``
+    - To mute a channel (turn off notifications): ``/mute {channel-name}`` (e.g., ``/mute announcements``)
+    - To remove someone from a channel: ``/kick {@username}`` (e.g., ``/kick @john``)
 
-- Join a specific channel using ``/join {channel-name}`` or ``/open {channel-name}``.
-- Leave a channel using ``/leave``.
-- Mute a channel using ``/mute`` or ``/mute {channel-name}`` to turn off desktop, email, and push notifications for the current or specified channel.
-- Remove someone from a channel using ``/kick {@username}`` or ``/remove {@username}``.
+Commands for conversations
+--------------------------
 
-Start or join a call
-~~~~~~~~~~~~~~~~~~~~
+These commands are useful for managing your conversations and messages.
 
-- Start a call in a channe or thread using ``/call start``
-- Join a call in a channel or thread using ``/call join``
+* **Send a direct message:**
+    - To send a direct message to a person: ``/msg {@username} {message}`` (e.g., ``/msg @maria What's the latest?``)
+    
+* **Format messages:**
+    - To display text as a code block: ``/code {text}``
+    - To respond with a shrug: ``/shrug {message}`` (e.g., ``/shrug I don't know the answer``)
 
-Manage conversations
-~~~~~~~~~~~~~~~~~~~~
+Commands for status
+--------------------
 
-- Send a direct message to someone using ``/msg {@username} {message}``, or send a group message to multiple people using ``/groupmsg {@username1, @username2, @username3,...} {message}``.
-- Display text as a code block using ``/code {text}``.
-- Automatically collapse image previews using ``/collapse``, and automatially expand them using ``/expand``.
-- Echo text back to yourself using ``/echo {message} {delay in seconds}`` or ``/me {message}``.
-- Respond with a shrug using ``/shrug {message}``.
-- Search message text using ``search {text}``.
+These commands change your status and availability in Mattermost.
 
-Set your availability and status
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Set :ref:`your availability <end-user-guide/preferences/set-your-status-availability:set your availability>` using ``/away``, ``/offline``, ``/online``, or ``/dnd``
-- Set :ref:`a custom status <end-user-guide/preferences/set-your-status-availability:set a custom status>` using ``/status {emoji_name} {descriptive status_message}``, such as ``/status sick Feeling unwell and taking time off to recover``. Clear your current status using ``/status clear``.
-
-Manage channels
-~~~~~~~~~~~~~~~
-
-- Edit the channel header using ``/header {text}`` or the channel purpose using ``/purpose {text}``.
-- Rename a channel using ``/rename {text}``.
-
-More useful slash commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Open the Mattermost product documentation using ``/help``.
-- Open the in-product Marketplace using ``/marketplace``.
-- Display a list of keyboard shortcuts using ``/shortcuts``.
-- Open the **Settings** screen using ``/settings``.
-- Log out of Mattermost using ``/logout``.
-
+* **Change availability:**
+    - To set your status to away: ``/away``
+    - To set your status to offline: ``/offline``
+    - To set your status to available: ``/online``
+    - To set your status to Do Not Disturb: ``/dnd``
+    
+* **Set a custom status:**
+    - To set a custom status with an emoji: ``/status {emoji_name} {message}`` (e.g., ``/status coffee In a meeting``)
+    - To clear your custom status: ``/status clear``
