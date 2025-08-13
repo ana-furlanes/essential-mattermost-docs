@@ -15,7 +15,6 @@ This Mattermost end user documentation is designed for anyone who wants guidance
    :maxdepth: 1
    :hidden:
    :titlesonly:
-
    Organize using teams </end-user-guide/collaborate/organize-using-teams>
    Organize using custom user groups </end-user-guide/collaborate/organize-using-custom-user-groups>
    Invite people </end-user-guide/collaborate/invite-people>

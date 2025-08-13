@@ -16,7 +16,7 @@ Welcome to Mattermost, your new secure and intelligent work environment. This do
 2. Understanding Your Workspace
 -----------------------------
 
-When you log in, you'll see the Mattermost workspace. This is where you will communicate and manage your tasks.
+When you **log in**, you'll see the Mattermost workspace. This is where you will communicate and manage your tasks.
 
 * **Sidebar:** On the left side, you have access to your channels, direct messages, and teams.
 * **Central Pane:** This is your main message box, where you read and send messages.
